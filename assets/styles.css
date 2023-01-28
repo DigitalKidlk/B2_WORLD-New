@@ -12,7 +12,7 @@ body {
     letter-spacing: 2px;
 }
 
-p{
+p {
     font-size: 14px;
 }
 
@@ -88,7 +88,8 @@ p{
     transition: 0.3s;
     position: relative;
     border-radius: 20px;
-    height: 280px;
+    height: 200px;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,22 +140,161 @@ p{
 /* Container for flexboxes */
 .row {
     display: flex;
-  }
-  
-  /* Create three equal columns that sits next to each other */
-  .column {
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
     flex: 1;
     padding: 10px;
-  }
-  
+}
+
 
 /* card section custom */
 
 
-.why-b2-world{
+.why-b2-world {
     padding: 0px 50px 100px 50px;
 }
 
-.b2-world-card .text img{
-    width: 150px;
+.b2-world-card .text img {
+    width: 120px;
 }
+
+.make-your-mark {
+    padding-bottom: 100px;
+}
+
+.make-your-mark-bg {
+    width: 70%;
+    height: 450px;
+    background-color: black;
+    border-radius: 0px 100px 100px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.make-your-mark-bg .image {
+    height: 400px;
+    width: 400px;
+    background: white;
+    border-radius: 90px;
+    margin: 0 50px;
+}
+
+.make-your-mark-bg .mark-text h2 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.make-your-mark-bg .mark-text button {
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 0px 50px 50px 0px;
+    margin-top: 30px;
+    background-color: unset;
+    border: 1px solid white;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 1px
+}
+
+
+.what-we-do-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-desktop{
+    display: none;
+}
+
+
+
+
+
+/* _-------------- custom mobile responsive css------------------------- */
+
+@media only screen and (min-width: 768px) {
+    .what-we-do .first {
+        height: 250px;
+    }
+
+    .what-we-do .second {
+        height: 255px;
+        width: 183px;
+        margin-top: 116px;
+    }
+
+    .what-we-do .third {
+        height: 250px;
+        margin-top: -125px;
+    }
+
+    .what-we-do .forth {
+        width: 186px;
+        height: 138px;
+        margin-top: -14px;
+    }
+
+    .what-we-do .fifth{
+        margin-top: -75px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wallpaper-text{
+        font-size: 60px;
+        top: 15%;
+    }
+
+    .wallpaper-small-text{
+        font-size: 10px;
+        top: 64%;
+    }
+
+    .what-we-do-left{
+        display: none;
+    }
+
+    .what-we-do .title{
+        display: none;
+    }
+
+    .title-desktop{
+        display: unset;
+    }
+
+    .what-we-do-right{
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .card{
+        width: 300px;
+    }
+
+    .why-b2-world h2{
+        font-size: 40px !important;
+    }
+
+    .what-actually-matters p{
+        padding: 0px 30px;
+    }
+
+    .make-your-mark-bg{
+        flex-direction: column;
+    }
+
+    .make-your-mark .image{
+        height: 190px;
+        width: 167px;
+        margin: 30px;
+    }
+
+    .make-your-mark-bg .mark-text h2{
+        font-size: 32px;
+    }
+}
+
