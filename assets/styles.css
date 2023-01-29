@@ -7,9 +7,11 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     color: #000;
-    letter-spacing: 2px;
+    background-image: url(imgs/main-imgs/bg-image-full.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 p {
@@ -19,15 +21,14 @@ p {
 .wallpaper {
     height: 80vh;
     width: 100%;
-    background-color: black;
     position: relative;
 }
 
-.wallpaper-inside {
-    height: 65vh;
-    width: 90%;
-    background-color: gray;
-    border-radius: 0px 0px 100px 100px;
+.wallpaper-inside img{
+    height: 83vh;
+    width: 100%;
+    /* background-color: gray;
+    border-radius: 0px 0px 100px 100px; */
     margin: 0 auto;
 }
 
@@ -42,21 +43,21 @@ p {
 
 .wallpaper-text span {
     font-weight: 600;
-    color: rgb(239, 239, 0);
+    color: #fbd053;
 }
 
 .wallpaper-small-text {
     position: absolute;
-    top: 67%;
+    top: 76%;
     left: 10%;
     font-weight: 200;
     font-style: italic;
     color: #ffffff;
 }
 
-.body-content {
+/* .body-content {
     background-color: rgba(202, 201, 201, 0.994);
-}
+} */
 
 .what-actually-matters {
     margin: 0 auto;
@@ -88,12 +89,11 @@ p {
     transition: 0.3s;
     position: relative;
     border-radius: 20px;
-    height: 200px;
-    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
+    height: 250px;
 }
 
 .card:hover {
@@ -106,15 +106,17 @@ p {
 
 .card-container h4 {
     font-size: 30px;
+    color: #ffffff;
 }
 
 .card-container h4 span {
-    color: rgb(239, 239, 0);
+    color: #fbd053;
 }
 
 .card-container p {
     font-size: 10px;
     letter-spacing: normal;
+    color: #ffffff;
 }
 
 .card-container p .arrow-icon {
@@ -123,7 +125,7 @@ p {
 }
 
 .card-container .know-more a {
-    color: #000;
+    color: #ffffff;
 }
 
 .grid-container {
@@ -157,37 +159,33 @@ p {
 }
 
 .b2-world-card .text img {
-    width: 120px;
+    width: 100px;
+    height: 73px;
+}
+
+.b2-world-card .text p {
+    font-size: 11px;
+    text-align: center;
 }
 
 .make-your-mark {
     padding-bottom: 100px;
+    position: relative;
 }
 
-.make-your-mark-bg {
-    width: 70%;
-    height: 450px;
-    background-color: black;
-    border-radius: 0px 100px 100px 0px;
-    display: flex;
-    align-items: center;
+.mark-text{
+    position: absolute;
+    top: 20%;
+    left: 42%;
 }
 
-.make-your-mark-bg .image {
-    height: 400px;
-    width: 400px;
-    background: white;
-    border-radius: 90px;
-    margin: 0 50px;
-}
-
-.make-your-mark-bg .mark-text h2 {
+.mark-text h2 {
     font-size: 50px;
     color: #ffffff;
     font-weight: 400;
 }
 
-.make-your-mark-bg .mark-text button {
+.mark-text button {
     padding: 5px 15px;
     font-size: 14px;
     border-radius: 0px 50px 50px 0px;
@@ -200,14 +198,44 @@ p {
 }
 
 
-.what-we-do-right{
+.what-we-do-right {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.title-desktop{
+.title-desktop {
     display: none;
+}
+
+.first{
+    background-image: url(imgs/what-we-do-imgs/DM.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second{
+    background-image: url(imgs/what-we-do-imgs/GDS.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third{
+    background-image: url(imgs/what-we-do-imgs/SMM.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.forth{
+    background-image: url(imgs/what-we-do-imgs/WDS.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fifth{
+    background-image: url(imgs/what-we-do-imgs/WDV.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -217,7 +245,7 @@ p {
 /* _-------------- custom mobile responsive css------------------------- */
 
 @media only screen and (min-width: 768px) {
-    .what-we-do .first {
+    /* .what-we-do .first {
         height: 250px;
     }
 
@@ -240,61 +268,58 @@ p {
 
     .what-we-do .fifth{
         margin-top: -75px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 600px) {
-    .wallpaper-text{
+    .wallpaper-text {
         font-size: 60px;
         top: 15%;
     }
 
-    .wallpaper-small-text{
+    .wallpaper-small-text {
         font-size: 10px;
         top: 64%;
     }
 
-    .what-we-do-left{
+    .what-we-do-left {
         display: none;
     }
 
-    .what-we-do .title{
+    .what-we-do .title {
         display: none;
     }
 
-    .title-desktop{
+    .title-desktop {
         display: unset;
+        font-size: 35px !important;
     }
 
-    .what-we-do-right{
+    .what-we-do-right {
         display: flex !important;
         justify-content: center !important;
     }
 
-    .card{
-        width: 300px;
-    }
-
-    .why-b2-world h2{
+    .why-b2-world h2 {
         font-size: 40px !important;
     }
 
-    .what-actually-matters p{
-        padding: 0px 30px;
+    .what-actually-matters{
+        padding: 150px 20px 80px 20px;
     }
 
-    .make-your-mark-bg{
+    .make-your-mark-bg {
         flex-direction: column;
+        width: 85%;
     }
 
-    .make-your-mark .image{
+    .make-your-mark .image {
         height: 190px;
         width: 167px;
         margin: 30px;
     }
 
-    .make-your-mark-bg .mark-text h2{
+    .make-your-mark-bg .mark-text h2 {
         font-size: 32px;
     }
 }
-
