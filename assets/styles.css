@@ -12,24 +12,26 @@ body {
     background-image: url(imgs/main-imgs/bg-image-full.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 p {
     font-size: 14px;
 }
 
+.bg-dark{
+    background-color: #191919 !important;
+}
+
 .wallpaper {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     position: relative;
 }
 
-.wallpaper-inside img{
+.wallpaper-inside img {
     height: 83vh;
-    width: 100%;
-    /* background-color: gray;
-    border-radius: 0px 0px 100px 100px; */
-    margin: 0 auto;
+    width: 100%;    margin: 0 auto;
 }
 
 .wallpaper-text {
@@ -48,20 +50,15 @@ p {
 
 .wallpaper-small-text {
     position: absolute;
-    top: 76%;
+    top: 61%;
     left: 10%;
     font-weight: 200;
     font-style: italic;
     color: #ffffff;
 }
 
-/* .body-content {
-    background-color: rgba(202, 201, 201, 0.994);
-} */
-
 .what-actually-matters {
     margin: 0 auto;
-    padding: 100px 0px;
     text-align: center;
     letter-spacing: normal;
 }
@@ -80,10 +77,6 @@ p {
 
 
 /* card section custom */
-.what-we-do {
-    padding: 0px 50px 100px 50px;
-}
-
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -147,17 +140,10 @@ p {
 /* Create three equal columns that sits next to each other */
 .column {
     flex: 1;
-    padding: 10px;
 }
 
 
 /* card section custom */
-
-
-.why-b2-world {
-    padding: 0px 50px 100px 50px;
-}
-
 .b2-world-card .text img {
     width: 100px;
     height: 73px;
@@ -169,11 +155,11 @@ p {
 }
 
 .make-your-mark {
-    padding-bottom: 100px;
+    padding-bottom: 15px;
     position: relative;
 }
 
-.mark-text{
+.mark-text {
     position: absolute;
     top: 20%;
     left: 42%;
@@ -208,31 +194,31 @@ p {
     display: none;
 }
 
-.first{
+.first {
     background-image: url(imgs/what-we-do-imgs/DM.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.second{
+.second {
     background-image: url(imgs/what-we-do-imgs/GDS.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.third{
+.third {
     background-image: url(imgs/what-we-do-imgs/SMM.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.forth{
+.forth {
     background-image: url(imgs/what-we-do-imgs/WDS.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.fifth{
+.fifth {
     background-image: url(imgs/what-we-do-imgs/WDV.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -245,41 +231,41 @@ p {
 /* _-------------- custom mobile responsive css------------------------- */
 
 @media only screen and (min-width: 768px) {
-    /* .what-we-do .first {
-        height: 250px;
-    }
-
-    .what-we-do .second {
-        height: 255px;
-        width: 183px;
-        margin-top: 116px;
-    }
-
-    .what-we-do .third {
-        height: 250px;
-        margin-top: -125px;
-    }
-
-    .what-we-do .forth {
-        width: 186px;
-        height: 138px;
-        margin-top: -14px;
-    }
-
-    .what-we-do .fifth{
-        margin-top: -75px;
-    } */
 }
 
 @media only screen and (max-width: 600px) {
+    p{
+        font-size: 12px !important;
+    }
+
+    .what-we-do p{
+        font-size: 10px !important;
+    }
+
+    .column {
+        flex: auto !important;
+        padding: 0px;
+    }
+
+    .card{
+        margin: 10px 0px !important;
+    }
+    
     .wallpaper-text {
         font-size: 60px;
         top: 15%;
+        left: 0;
+        text-align: center;
+    }
+
+    .wallpaper-inside{
+        display: none;
     }
 
     .wallpaper-small-text {
         font-size: 10px;
         top: 64%;
+        left: 16%;
     }
 
     .what-we-do-left {
@@ -292,7 +278,7 @@ p {
 
     .title-desktop {
         display: unset;
-        font-size: 35px !important;
+        font-size: 25px !important;
     }
 
     .what-we-do-right {
@@ -300,11 +286,16 @@ p {
         justify-content: center !important;
     }
 
-    .why-b2-world h2 {
-        font-size: 40px !important;
+    .why-b2-world .row{
+        gap: 0px !important;
     }
 
-    .what-actually-matters{
+    .why-b2-world h2 {
+        font-size: 30px !important;
+        padding-bottom: 15px !important;
+    }
+
+    .what-actually-matters {
         padding: 150px 20px 80px 20px;
     }
 
@@ -313,13 +304,107 @@ p {
         width: 85%;
     }
 
-    .make-your-mark .image {
-        height: 190px;
-        width: 167px;
-        margin: 30px;
+    .mark-text h2{
+        font-size: 17px !important;
+    }
+    
+    .mark-text{
+        top: 15% !important;
     }
 
-    .make-your-mark-bg .mark-text h2 {
-        font-size: 32px;
+    .mark-text button{
+        margin-top: 0px !important;
+        font-size: 10px !important;
+    }
+
+    .footer{
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .footer .row{
+        display: none !important;
+    }
+
+    .footer select{
+        display: inline-block !important;
     }
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer {
+    background-image: url(imgs/main-imgs/Footer-Img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+/*END FOOTER SOCIAL DESIGN*/
+@media only screen and (max-width:768px) {
+    .single_footer {
+        margin-bottom: 30px;
+    }
+}
+
+.single_footer h4 {
+    color: #191919;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.single_footer p {
+    color: #fff;
+}
+
+.single_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.single_footer ul li{
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Roboto';
+}
+
+.single_footer ul li a {
+    color: #191919;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Roboto';
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.single_footer ul li a:hover {
+    color: #fbd053;
+}
+
+.footer select{
+    display: none;
+}
+
+
+/*END SOCIAL PROFILE CSS*/
+.copyright {
+    padding: 10px 0px;
+    color: #ffffff;
+    font-size: 11px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+    background-color: #191919;
+    margin-bottom: 0px;
+}
+
+
