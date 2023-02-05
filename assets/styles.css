@@ -20,7 +20,11 @@ p {
 }
 
 .bg-dark{
-    background-color: #191919 !important;
+    background-color: #19191900 !important;
+}
+
+.threeDots{
+    color: red;
 }
 
 .wallpaper {
@@ -95,6 +99,7 @@ p {
 
 .card-container {
     text-align: center;
+    padding: 20px;
 }
 
 .card-container h4 {
@@ -115,6 +120,10 @@ p {
 .card-container p .arrow-icon {
     height: 10px;
     width: 10px;
+}
+
+.card-container .know-more{
+    cursor: pointer;
 }
 
 .card-container .know-more a {
@@ -207,19 +216,19 @@ p {
 }
 
 .third {
-    background-image: url(imgs/what-we-do-imgs/SMM.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.forth {
     background-image: url(imgs/what-we-do-imgs/WDS.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.fifth {
+.forth {
     background-image: url(imgs/what-we-do-imgs/WDV.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fifth {
+    background-image: url(imgs/what-we-do-imgs/SMM.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -234,21 +243,40 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
-    p{
-        font-size: 12px !important;
+    body{
+        background-image: url(imgs/main-imgs/Full-Mobile-bg.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        width: 100% !important;
     }
 
-    .what-we-do p{
+    .bg-dark{
+        background-color: #19191900 !important;
+    }
+
+    .navbar-brand .logo{
+        margin-left: -23px !important;
+    }
+    
+    p{
         font-size: 10px !important;
     }
 
+    .what-we-do p{
+        font-size: 8px !important;
+    }
+
     .column {
-        flex: auto !important;
         padding: 0px;
     }
 
     .card{
-        margin: 10px 0px !important;
+        margin: 10px 10px !important;
+        width: 165px;
+    }
+
+    .wallpaper{
+        height: 100vh !important;
     }
     
     .wallpaper-text {
@@ -256,6 +284,7 @@ p {
         top: 15%;
         left: 0;
         text-align: center;
+        display: none;
     }
 
     .wallpaper-inside{
@@ -266,6 +295,7 @@ p {
         font-size: 10px;
         top: 64%;
         left: 16%;
+        display: none;
     }
 
     .what-we-do-left {
@@ -279,6 +309,12 @@ p {
     .title-desktop {
         display: unset;
         font-size: 25px !important;
+        position: absolute;
+        padding-top: 20px;
+    }
+
+    .title-desktop span{
+        font-size: 38px !important;
     }
 
     .what-we-do-right {
@@ -288,6 +324,7 @@ p {
 
     .why-b2-world .row{
         gap: 0px !important;
+        margin: 0px 10px !important;
     }
 
     .why-b2-world h2 {
@@ -296,7 +333,6 @@ p {
     }
 
     .what-actually-matters {
-        padding: 150px 20px 80px 20px;
     }
 
     .make-your-mark-bg {
@@ -305,16 +341,17 @@ p {
     }
 
     .mark-text h2{
-        font-size: 17px !important;
+        font-size: 22px !important;
     }
     
     .mark-text{
         top: 15% !important;
+        left: 50% !important;
     }
 
     .mark-text button{
         margin-top: 0px !important;
-        font-size: 10px !important;
+        font-size: 8px !important;
     }
 
     .footer{
@@ -329,7 +366,46 @@ p {
     .footer select{
         display: inline-block !important;
     }
+
+    /* -------------------- crad section mobole---------------- */
+    .card-container{
+        padding: 5px;
+    }
+    .card-container h4{
+        font-size: 15px;
+    }
+    .second-column{
+        margin-top: 135px;
+    }
+    .third-column{
+        margin-top: -135px;
+    }
+    .forth{
+        height: 285px;
+    }
+    .fifth-column{
+        margin-top: -168px;
+    }
+    .fifth{
+        height: 150px;
+    }
+
+    /* ---------------------why b2 world section-------------- */
+
+    .why-b2-world .column{
+        flex: auto !important;
+        padding: 0px 25px;
+    }
+
+    .make-your-mark .image{
+        width: 460px !important;
+    }
 }
+
+
+
+
+
 
 ul {
     margin: 0;
